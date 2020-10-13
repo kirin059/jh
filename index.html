@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head lang="ko">
+  <meta charset = "utf-8">
+  <title>form practice</title>
+  <style>
+  .head{
+  border-bottom: 2px solid grey;
+  }
+  .nav{
+  border-bottom: 1px solid grey;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  }
+    </style>
+</head>
+
+<body>
+<div class="container">
+  <div class="head">
+    <h1 style="font-size:50px">Welcom <span style="color:yellow">SJH</span></h1>
+  </div>
+
+  <div class="nav">
+    <p style="font-size:18px;">Please enter your confirmation email address.</p>
+    <form>
+      Address <input type="text">
+      <input type="submit">
+    </form>
+  </div>
+
+  <div class="article">
+    <h2 style="color:purple">More Options</h2>
+    <form>
+      Please supply the following details: <br>
+      <ul>
+      <li>name <input type="text"> <input type="submit"></li><br>
+      <li>sex</li><br>
+        <label for="male">남성</label> <input type="radio" name="agreement" id="male">
+        <label for="female">여성</label> <input type="radio" name="agreement" id="female"><br><br>
+      <li>weight <input type="text"> <input type="submit"> <label for="check1"><input type="checkbox" name="autoLogin" id="check1"> 쉿! 비밀로 하기 </label>
+      </ul>
+      <input type="submit" value="최종제출">
+    </form>
+    <hr style="border:dotted grey; margin-top:40px;">
+    <p style="margin-top:40px">
+    Password <input type="password" maxlength="8"> <input type="submit" value="확인">
+    </p>
+    <p style="margin-top:40px">
+      마지막으로 가장 중요한 단계입니다. <span style="color:red">아래 버튼을 클릭</span>해주세요.</p>
+      <p>
+    <script>
+    function button_event(){
+      if(confirm('봄이를 사랑하나요?')==true){
+        alert("딩동댕 나도 사랑해");
+      }else {
+        alert("땡 틀렸어 다시 클릭해!!!");
+      }
+    }
+    </script>
+    <input type="button" value="반드시 클릭하시오" onclick="button_event()">
+    </p>
+</div>
+</body>
+</html>
